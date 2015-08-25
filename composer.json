@@ -5,6 +5,12 @@
     "keywords": ["victoire", "MailchimpNewsletter", "widget"],
     "homepage": "http://victoire.io",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Leny BERNARD",
+            "email": "leny@appventus.com"
+        }
+    ],
     "require": {
         "php"                      : ">=5.3.3",
         "symfony/framework-bundle" : "~2.3",

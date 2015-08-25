@@ -14,12 +14,6 @@
                         <div class="response" id="mce-error-response" style="display:none"></div>
                         <div class="response" id="mce-success-response" style="display:none"></div>
                     </div>
-                    <div class="mc-field-group form-group">
-                        <label for="mce-EMAIL" class="{{ block('labels_class') }}">{{ 'victoire_mailchimp_newsletter.show.signupForm.email.label'|trans({}, 'victoire') }}</label>
-                        {% block email_field %}
-                            <input type="email" value="" name="EMAIL" class="required email {{ block('text_inputs_class') }}" id="mce-EMAIL">
-                        {% endblock email_field %}
-                    </div>
                     {% if enableFirstName %}
                         <div class="mc-field-group form-group">
                             <label for="mce-FNAME" class="{{ block('extra_label_class') }}">{{ 'victoire_mailchimp_newsletter.show.signupForm.firstName.label'|trans({}, 'victoire') }} </label>
@@ -36,6 +30,14 @@
                             {% endblock lastname_field %}
                         </div>
                     {% endif %}
+                    {% block email_group_field %}
+                    <div class="mc-field-group form-group">
+                        <label for="mce-EMAIL" class="{{ block('labels_class') }}">{{ 'victoire_mailchimp_newsletter.show.signupForm.email.label'|trans({}, 'victoire') }}</label>
+                        {% block email_field %}
+                            <input type="email" value="" name="EMAIL" class="required email {{ block('text_inputs_class') }}" id="mce-EMAIL">
+                        {% endblock email_field %}
+                    </div>
+                    {% endblock email_group_field %}
 
                     {% block button %}
                     <button type="submit" class="btn btn-primary" id="mc-embedded-subscribe">

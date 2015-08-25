@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2013-11-27T18:15:06Z" source-language="en" target-language="fr" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="1" resname="widget.mailchimpnewsletter.new.action.label">
+        <source>widget.mailchimpnewsletter.new.action.label</source>
+        <target>Newsletter</target>
+      </trans-unit>
+      <trans-unit id="2" resname="modal.form.widget.type.mailchimpnewsletter.label">
+        <source>modal.form.widget.type.mailchimpnewsletter.label</source>
+        <target>Formulaire de newsletter Mailchimp</target>
+      </trans-unit>
+      <trans-unit id="3" resname="widget_mailchimpnewsletter.form.listId.label">
+        <source>widget_mailchimpnewsletter.form.listId.label</source>
+        <target>Liste</target>
+      </trans-unit>
+      <trans-unit id="4" resname="widget_mailchimpnewsletter.form.buttonLabel.label">
+        <source>widget_mailchimpnewsletter.form.buttonLabel.label</source>
+        <target>Libellé du bouton</target>
+      </trans-unit>
+      <trans-unit id="5" resname="widget_mailchimpnewsletter.form.icon.label">
+        <source>widget_mailchimpnewsletter.form.icon.label</source>
+        <target>Icône</target>
+      </trans-unit>
+      <trans-unit id="6" resname="widget_mailchimpnewsletter.form.enableFirstName.label">
+        <source>widget_mailchimpnewsletter.form.enableFirstName.label</source>
+        <target>Demander le prénom</target>
+      </trans-unit>
+      <trans-unit id="7" resname="widget_mailchimpnewsletter.form.enableLastName.label">
+        <source>widget_mailchimpnewsletter.form.enableLastName.label</source>
+        <target>Demander le nom</target>
+      </trans-unit>
+      <trans-unit id="8" resname="widget_mailchimpnewsletter.form.congratulationMessage.label">
+        <source>widget_mailchimpnewsletter.form.congratulationMessage.label</source>
+        <target>Message de succès</target>
+      </trans-unit>
+      <trans-unit id="9" resname="victoire_mailchimp_newsletter.show.signupForm.email.label">
+        <source>victoire_mailchimp_newsletter.show.signupForm.email.label</source>
+        <target>Adresse email</target>
+      </trans-unit>
+      <trans-unit id="10" resname="victoire_mailchimp_newsletter.show.signupForm.firstName.label">
+        <source>victoire_mailchimp_newsletter.show.signupForm.firstName.label</source>
+        <target>Prénom</target>
+      </trans-unit>
+      <trans-unit id="11" resname="victoire_mailchimp_newsletter.show.signupForm.lastName.label">
+        <source>victoire_mailchimp_newsletter.show.signupForm.lastName.label</source>
+        <target>Nom</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

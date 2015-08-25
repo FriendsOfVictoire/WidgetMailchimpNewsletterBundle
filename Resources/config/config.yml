@@ -1,0 +1,11 @@
+victoire_core:
+    widgets:
+        MailchimpNewsletter:
+            class: "Victoire\\Widget\\MailchimpNewsletterBundle\\Entity\\WidgetMailchimpNewsletter"
+            name: MailchimpNewsletter
+            
+jms_translation:
+    configs:
+        victoire_mailchimpnewsletter_bundle:
+            dirs: ["@VictoireMailchimpNewsletterBundle"]
+            output_dir: "@VictoireMailchimpNewsletterBundle/Resources/translations"

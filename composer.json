@@ -1,0 +1,19 @@
+{
+    "name": "friendsofvictoire/mailchimpnewsletter-widget",
+    "type": "symfony-bundle",
+    "description": "Victoire MailchimpNewsletter widget",
+    "keywords": ["victoire", "MailchimpNewsletter", "widget"],
+    "homepage": "http://victoire.io",
+    "license": "MIT",
+    "require": {
+        "php"                      : ">=5.3.3",
+        "symfony/framework-bundle" : "~2.3",
+        "victoire/victoire"        : "dev-master",
+        "ahmedsamy/hype-mailchimp-bundle": "1.1.x-dev"
+    },
+    "autoload": {
+        "psr-0": { "Victoire\\Widget\\MailchimpNewsletterBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Victoire/Widget/MailchimpNewsletterBundle"
+}

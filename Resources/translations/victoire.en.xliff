@@ -50,6 +50,14 @@
         <source>victoire_mailchimp_newsletter.show.signupForm.lastName.label</source>
         <target>Last name</target>
       </trans-unit>
+      <trans-unit id="12" resname="victoire.VictoireWidgetMailchimpNewsletterBundle.theme.Inline.label">
+        <source>victoire.VictoireWidgetMailchimpNewsletterBundle.theme.Inline.label</source>
+        <target>Inline</target>
+      </trans-unit>
+      <trans-unit id="13" resname="victoire.VictoireWidgetMailchimpNewsletterBundle.theme.Horizontal.label">
+        <source>victoire.VictoireWidgetMailchimpNewsletterBundle.theme.Horizontal.label</source>
+        <target>Horizontal</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

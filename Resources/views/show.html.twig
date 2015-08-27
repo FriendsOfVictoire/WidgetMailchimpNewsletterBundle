@@ -66,11 +66,13 @@
             fnames[2]='LNAME';
             ftypes[2]='text';
             {% endif %}
+            {% if app.request.locale != 'en'  %}{# default language is en #}
             /*
              * Translated default messages for the $ validation plugin.
              * Locale: {{ app.request.locale }}
              */
             {% include "VictoireWidgetMailchimpNewsletterBundle:localization:messages_" ~ app.request.locale ~ ".js.twig" %}
+            {% endif %}
 
         }(jQuery));
         var $mcj = jQuery.noConflict(true);

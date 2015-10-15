@@ -7,9 +7,8 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 
-
 /**
- * WidgetMailchimpNewsletter form type
+ * WidgetMailchimpNewsletter form type.
  */
 class WidgetMailchimpNewsletterType extends WidgetType
 {
@@ -18,66 +17,68 @@ class WidgetMailchimpNewsletterType extends WidgetType
     /**
      * @param MailChimp $mailchimp
      */
-    public function __construct(MailChimp $mailchimp) {
+    public function __construct(MailChimp $mailchimp)
+    {
         $this->mailchimp = $mailchimp;
     }
 
     /**
-     * define form fields
+     * define form fields.
+     *
      * @param FormBuilderInterface $builder
+     *
      * @param array $options
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $lists = array();
+        $lists = [];
         $_lists = $this->mailchimp->getList()->lists();
-        foreach($_lists['data'] as $list) {
+        foreach ($_lists['data'] as $list) {
             $lists[$list['id']] = $list['name'];
         }
 
         $builder
-            ->add('listId', 'choice', array(
-                    'label' => 'widget_mailchimpnewsletter.form.listId.label',
-                    'choices' => $lists
-            ))
-            ->add('buttonLabel', null, array(
-                    'label' => 'widget_mailchimpnewsletter.form.buttonLabel.label'
-            ))
-            ->add('icon', 'font_awesome_picker', array(
-                    'label' => 'widget_mailchimpnewsletter.form.icon.label'
-            ))
-            ->add('enableFirstName', null, array(
-                    'label' => 'widget_mailchimpnewsletter.form.enableFirstName.label'
-            ))
-            ->add('enableLastName', null, array(
-                    'label' => 'widget_mailchimpnewsletter.form.enableLastName.label'
-            ))
-            ->add('congratulationMessage', null, array(
-                    'label' => 'widget_mailchimpnewsletter.form.congratulationMessage.label'
-            ));
+            ->add('listId', 'choice', [
+                    'label'   => 'widget_mailchimpnewsletter.form.listId.label',
+                    'choices' => $lists,
+            ])
+            ->add('buttonLabel', null, [
+                    'label' => 'widget_mailchimpnewsletter.form.buttonLabel.label',
+            ])
+            ->add('icon', 'font_awesome_picker', [
+                    'label' => 'widget_mailchimpnewsletter.form.icon.label',
+            ])
+            ->add('enableFirstName', null, [
+                    'label' => 'widget_mailchimpnewsletter.form.enableFirstName.label',
+            ])
+            ->add('enableLastName', null, [
+                    'label' => 'widget_mailchimpnewsletter.form.enableLastName.label',
+            ])
+            ->add('congratulationMessage', null, [
+                    'label' => 'widget_mailchimpnewsletter.form.congratulationMessage.label',
+            ]);
 
         parent::buildForm($builder, $options);
-
     }
 
-
     /**
-     * bind form to WidgetMailchimpNewsletter entity
+     * bind form to WidgetMailchimpNewsletter entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         parent::setDefaultOptions($resolver);
 
-        $resolver->setDefaults(array(
+        $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\MailchimpNewsletterBundle\Entity\WidgetMailchimpNewsletter',
             'widget'             => 'MailchimpNewsletter',
-            'translation_domain' => 'victoire'
-        ));
+            'translation_domain' => 'victoire',
+        ]);
     }
 
     /**
-     * get form name
+     * get form name.
      *
      * @return string The form name
      */

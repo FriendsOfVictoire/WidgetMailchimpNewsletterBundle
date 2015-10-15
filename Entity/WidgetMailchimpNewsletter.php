@@ -1,18 +1,18 @@
 <?php
+
 namespace Victoire\Widget\MailchimpNewsletterBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetMailchimpNewsletter
+ * WidgetMailchimpNewsletter.
  *
  * @ORM\Table("vic_widget_mailchimpnewsletter")
  * @ORM\Entity
  */
 class WidgetMailchimpNewsletter extends Widget
 {
-
     /**
      * @var string
      *
@@ -35,14 +35,14 @@ class WidgetMailchimpNewsletter extends Widget
     protected $icon;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="enableFirstName", type="boolean")
      */
     protected $enableFirstName;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="enableLastName", type="boolean")
      */
@@ -58,18 +58,17 @@ class WidgetMailchimpNewsletter extends Widget
     /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
-     * //TODO Check the generated value and make it more consistent
+     * //TODO Check the generated value and make it more consistent.
      *
-     * @return String
+     * @return string
      */
     public function __toString()
     {
         return 'MailchimpNewsletter #'.$this->id;
     }
 
-
     /**
-     * Set listId
+     * Set listId.
      *
      * @param string $listId
      */
@@ -81,7 +80,7 @@ class WidgetMailchimpNewsletter extends Widget
     }
 
     /**
-     * Get listId
+     * Get listId.
      *
      * @return string
      */
@@ -91,7 +90,7 @@ class WidgetMailchimpNewsletter extends Widget
     }
 
     /**
-     * Set buttonLabel
+     * Set buttonLabel.
      *
      * @param string $buttonLabel
      */
@@ -103,7 +102,7 @@ class WidgetMailchimpNewsletter extends Widget
     }
 
     /**
-     * Get buttonLabel
+     * Get buttonLabel.
      *
      * @return string
      */
@@ -113,7 +112,7 @@ class WidgetMailchimpNewsletter extends Widget
     }
 
     /**
-     * Set icon
+     * Set icon.
      *
      * @param string $icon
      */
@@ -125,7 +124,7 @@ class WidgetMailchimpNewsletter extends Widget
     }
 
     /**
-     * Get icon
+     * Get icon.
      *
      * @return string
      */
@@ -135,7 +134,7 @@ class WidgetMailchimpNewsletter extends Widget
     }
 
     /**
-     * Set enableFirstName
+     * Set enableFirstName.
      *
      * @param string $enableFirstName
      */
@@ -147,7 +146,7 @@ class WidgetMailchimpNewsletter extends Widget
     }
 
     /**
-     * Get enableFirstName
+     * Get enableFirstName.
      *
      * @return string
      */
@@ -157,7 +156,7 @@ class WidgetMailchimpNewsletter extends Widget
     }
 
     /**
-     * Set enableLastName
+     * Set enableLastName.
      *
      * @param string $enableLastName
      */
@@ -169,7 +168,7 @@ class WidgetMailchimpNewsletter extends Widget
     }
 
     /**
-     * Get enableLastName
+     * Get enableLastName.
      *
      * @return string
      */
@@ -179,7 +178,7 @@ class WidgetMailchimpNewsletter extends Widget
     }
 
     /**
-     * Set congratulationMessage
+     * Set congratulationMessage.
      *
      * @param string $congratulationMessage
      */
@@ -191,7 +190,7 @@ class WidgetMailchimpNewsletter extends Widget
     }
 
     /**
-     * Get congratulationMessage
+     * Get congratulationMessage.
      *
      * @return string
      */
@@ -199,5 +198,4 @@ class WidgetMailchimpNewsletter extends Widget
     {
         return $this->congratulationMessage;
     }
-
 }

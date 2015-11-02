@@ -1,18 +1,24 @@
 Victoire MailchimpNewsletter Widget
 ============
 
-Need to add a Mmailchimp Newsletter in a victoire website ?
+##What is the purpose of this bundle
 
-First you need to have a valid Symfony2 Victoire edition.
+This bundle gives you access to the *MailChimp Newsletter Widget*.
 
-Then run :
-```
+##Set Up Victoire
+
+If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
+
+##Install the bundle :
+
+Run the following composer command :
+
     php composer.phar require friendsofvictoire/mailchimpnewsletter-widget
-```
+
+###Reminder
 
 Declare the bundle in your AppKernel:
 
-```php
     class AppKernel extends Kernel
     {
         public function registerBundles()
@@ -25,6 +31,7 @@ Declare the bundle in your AppKernel:
             return $bundles;
         }
     }
-```
+
+##Preset
 
 Be sure the HypeMailChimpBundle is correctly installed by reading the [README](https://github.com/AhmedSamy/HypeMailChimpBundle).

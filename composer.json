@@ -1,25 +1,42 @@
 {
-    "name": "friendsofvictoire/mailchimpnewsletter-widget",
-    "type": "symfony-bundle",
-    "description": "Victoire DCMS MailChimp Newsletter widget",
-    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "FoV", "Dynamic", "CMS", "Mailchimp", "Newsletter"],
-    "homepage": "http://victoire.io",
-    "license": "MIT",
-    "authors": [
+    "name"             : "friendsofvictoire/mailchimpnewsletter-widget",
+    "type"             : "symfony-bundle",
+    "description"      : "Victoire DCMS MailChimp Newsletter widget",
+    "keywords"         : [
+        "DCMS",
+        "Victoire",
+        "widget",
+        "FriendsofVictoire",
+        "FoV",
+        "Dynamic",
+        "CMS",
+        "Mailchimp",
+        "Newsletter"
+    ],
+    "homepage"         : "http://victoire.io",
+    "license"          : "MIT",
+    "authors"          : [
         {
-            "name": "Leny BERNARD",
+            "name" : "Leny BERNARD",
             "email": "leny@victoire.io"
         }
     ],
-    "require": {
-        "php"                      : ">=5.3.3",
-        "symfony/framework-bundle" : "~2.3",
-        "victoire/victoire"        : "~1.3.0",
+    "require"          : {
+        "php"                            : ">=5.3.3",
+        "symfony/framework-bundle"       : "~2.3",
+        "victoire/victoire"              : "~1.3.0",
         "ahmedsamy/hype-mailchimp-bundle": "1.1.x-dev"
     },
-    "autoload": {
-        "psr-0": { "Victoire\\Widget\\MailchimpNewsletterBundle": "" }
+    "autoload"         : {
+        "psr-0": {
+            "Victoire\\Widget\\MailchimpNewsletterBundle": ""
+        }
     },
     "minimum-stability": "dev",
-    "target-dir": "Victoire/Widget/MailchimpNewsletterBundle"
+    "target-dir"       : "Victoire/Widget/MailchimpNewsletterBundle",
+    "extra"            : {
+        "branch-alias": {
+            "dev-master": "1.3.x-dev"
+        }
+    }
 }

@@ -16,7 +16,7 @@
                     </div>
                     {% if enableFirstName %}
                         <div class="mc-field-group form-group">
-                            <label for="mce-FNAME" class="{{ block('extra_label_class') }}">{{ 'victoire_mailchimp_newsletter.show.signupForm.firstName.label'|trans({}, 'victoire') }} </label>
+                            <label for="mce-FNAME" class="{{ block('extra_label_class') }}">{{ 'victoire_mailchimp_newsletter.show.signupForm.firstName.label'|trans }} </label>
                             {% block firstname_field %}
                                 <input type="text" value="" name="FNAME" class="{{ block('text_inputs_class') }}" id="mce-FNAME">
                             {% endblock firstname_field %}
@@ -24,7 +24,7 @@
                     {% endif %}
                     {% if enableLastName %}
                         <div class="mc-field-group form-group">
-                            <label for="mce-LNAME" class="{{ block('extra_label_class') }}">{{ 'victoire_mailchimp_newsletter.show.signupForm.lastName.label'|trans({}, 'victoire') }} </label>
+                            <label for="mce-LNAME" class="{{ block('extra_label_class') }}">{{ 'victoire_mailchimp_newsletter.show.signupForm.lastName.label'|trans }} </label>
                             {% block lastname_field %}
                                 <input type="text" value="" name="LNAME" class="{{ block('text_inputs_class') }}" id="mce-LNAME">
                             {% endblock lastname_field %}
@@ -32,7 +32,7 @@
                     {% endif %}
                     {% block email_group_field %}
                     <div class="mc-field-group form-group">
-                        <label for="mce-EMAIL" class="{{ block('labels_class') }}">{{ 'victoire_mailchimp_newsletter.show.signupForm.email.label'|trans({}, 'victoire') }}</label>
+                        <label for="mce-EMAIL" class="{{ block('labels_class') }}">{{ 'victoire_mailchimp_newsletter.show.signupForm.email.label'|trans }}</label>
                         {% block email_field %}
                             <input type="email" value="" name="EMAIL" class="required email {{ block('text_inputs_class') }}" id="mce-EMAIL">
                         {% endblock email_field %}

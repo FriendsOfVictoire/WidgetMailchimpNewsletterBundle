@@ -38,18 +38,6 @@
         <source>widget_mailchimpnewsletter.form.congratulationMessage.label</source>
         <target>Congratulation message</target>
       </trans-unit>
-      <trans-unit id="9" resname="victoire_mailchimp_newsletter.show.signupForm.email.label">
-        <source>victoire_mailchimp_newsletter.show.signupForm.email.label</source>
-        <target>Email</target>
-      </trans-unit>
-      <trans-unit id="10" resname="victoire_mailchimp_newsletter.show.signupForm.firstName.label">
-        <source>victoire_mailchimp_newsletter.show.signupForm.firstName.label</source>
-        <target>First name</target>
-      </trans-unit>
-      <trans-unit id="11" resname="victoire_mailchimp_newsletter.show.signupForm.lastName.label">
-        <source>victoire_mailchimp_newsletter.show.signupForm.lastName.label</source>
-        <target>Last name</target>
-      </trans-unit>
       <trans-unit id="12" resname="victoire.VictoireWidgetMailchimpNewsletterBundle.theme.Inline.label">
         <source>victoire.VictoireWidgetMailchimpNewsletterBundle.theme.Inline.label</source>
         <target>Inline</target>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2013-11-27T18:15:06Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <body>
+      <trans-unit>
+        <source>victoire_mailchimp_newsletter.show.signupForm.email.label</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit>
+        <source>victoire_mailchimp_newsletter.show.signupForm.firstName.label</source>
+        <target>First name</target>
+      </trans-unit>
+      <trans-unit>
+        <source>victoire_mailchimp_newsletter.show.signupForm.lastName.label</source>
+        <target>Last name</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

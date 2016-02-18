@@ -24,7 +24,7 @@
     "require"          : {
         "php"                            : ">=5.3.3",
         "symfony/framework-bundle"       : "~2.3",
-        "victoire/victoire"              : "~1.3.0",
+        "victoire/victoire"              : "~1.3",
         "ahmedsamy/hype-mailchimp-bundle": "1.1.x-dev"
     },
     "autoload"         : {

@@ -14,4 +14,4 @@ services:
         arguments:
           - @hype_mailchimp
         tags:
-            - { name: form.type , alias: victoire_widget_form_mailchimpnewsletter }
+            - { name: form.type }

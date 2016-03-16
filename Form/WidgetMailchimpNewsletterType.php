@@ -4,6 +4,7 @@ namespace Victoire\Widget\MailchimpNewsletterBundle\Form;
 
 use Hype\MailchimpBundle\Mailchimp\MailChimp;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
@@ -43,9 +44,49 @@ class WidgetMailchimpNewsletterType extends WidgetType
             ->add('listId', ChoiceType::class, [
                 'label'   => 'widget_mailchimpnewsletter.form.listId.label',
                 'choices' => $lists,
+                'choices_as_values' => true,
             ])
             ->add('buttonLabel', null, [
                 'label' => 'widget_mailchimpnewsletter.form.buttonLabel.label',
+                'attr' => [
+                    'placeholder' => 'victoire_mailchimp_newsletter.show.signupForm.button.placeholder',
+                ]
+            ])
+            ->add('emailPlaceholder', null, [
+                'label' => 'widget_mailchimpnewsletter.form.emailPlaceholder.label',
+                'attr' => [
+                    'placeholder' => 'victoire_mailchimp_newsletter.show.signupForm.email.placeholder',
+                ]
+            ])
+            ->add('emailLabel', null, [
+                'label' => 'widget_mailchimpnewsletter.form.emailLabel.label',
+                'attr' => [
+                    'placeholder' => 'victoire_mailchimp_newsletter.show.signupForm.email.placeholder',
+                ]
+            ])
+            ->add('firstnamePlaceholder', null, [
+                'label' => 'widget_mailchimpnewsletter.form.firstnamePlaceholder.label',
+                'attr' => [
+                    'placeholder' => 'victoire_mailchimp_newsletter.show.signupForm.firstname.placeholder',
+                ]
+            ])
+            ->add('firstnameLabel', null, [
+                'label' => 'widget_mailchimpnewsletter.form.firstnameLabel.label',
+                'attr' => [
+                    'placeholder' => 'victoire_mailchimp_newsletter.show.signupForm.firstname.placeholder',
+                ]
+            ])
+            ->add('lastnamePlaceholder', null, [
+                'label' => 'widget_mailchimpnewsletter.form.lastnamePlaceholder.label',
+                'attr' => [
+                    'placeholder' => 'victoire_mailchimp_newsletter.show.signupForm.lastname.placeholder',
+                ]
+            ])
+            ->add('lastnameLabel', null, [
+                'label' => 'widget_mailchimpnewsletter.form.lastnameLabel.label',
+                'attr' => [
+                    'placeholder' => 'victoire_mailchimp_newsletter.show.signupForm.lastname.placeholder',
+                ]
             ])
             ->add('icon', FontAwesomePickerType::class, [
                 'label' => 'widget_mailchimpnewsletter.form.icon.label',
@@ -56,7 +97,7 @@ class WidgetMailchimpNewsletterType extends WidgetType
             ->add('enableLastName', null, [
                 'label' => 'widget_mailchimpnewsletter.form.enableLastName.label',
             ])
-            ->add('congratulationMessage', null, [
+            ->add('congratulationMessage', TextareaType::class, [
                 'label' => 'widget_mailchimpnewsletter.form.congratulationMessage.label',
             ]);
 

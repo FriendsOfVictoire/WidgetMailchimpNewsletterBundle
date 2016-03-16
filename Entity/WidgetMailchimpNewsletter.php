@@ -23,14 +23,56 @@ class WidgetMailchimpNewsletter extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="buttonLabel", type="string", length=55)
+     * @ORM\Column(name="buttonLabel", type="string", length=55, nullable=true)
      */
     protected $buttonLabel;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="icon", type="string", length=255)
+     * @ORM\Column(name="emailLabel", type="string", length=55, nullable=true)
+     */
+    protected $emailLabel;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="firstnameLabel", type="string", length=55, nullable=true)
+     */
+    protected $firstnameLabel;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lastnameLabel", type="string", length=55, nullable=true)
+     */
+    protected $lastnameLabel;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="emailPlaceholder", type="string", length=55, nullable=true)
+     */
+    protected $emailPlaceholder;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="firstnamePlaceholder", type="string", length=55, nullable=true)
+     */
+    protected $firstnamePlaceholder;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lastnamePlaceholder", type="string", length=55, nullable=true)
+     */
+    protected $lastnamePlaceholder;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="icon", type="string", length=255, nullable=true)
      */
     protected $icon;
 
@@ -197,5 +239,101 @@ class WidgetMailchimpNewsletter extends Widget
     public function getCongratulationmessage()
     {
         return $this->congratulationMessage;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastnameLabel()
+    {
+        return $this->lastnameLabel;
+    }
+
+    /**
+     * @param string $lastnameLabel
+     */
+    public function setLastnameLabel($lastnameLabel)
+    {
+        $this->lastnameLabel = $lastnameLabel;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFirstnameLabel()
+    {
+        return $this->firstnameLabel;
+    }
+
+    /**
+     * @param string $firstnameLabel
+     */
+    public function setFirstnameLabel($firstnameLabel)
+    {
+        $this->firstnameLabel = $firstnameLabel;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmailLabel()
+    {
+        return $this->emailLabel;
+    }
+
+    /**
+     * @param string $emailLabel
+     */
+    public function setEmailLabel($emailLabel)
+    {
+        $this->emailLabel = $emailLabel;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastnamePlaceholder()
+    {
+        return $this->lastnamePlaceholder;
+    }
+
+    /**
+     * @param string $lastnamePlaceholder
+     */
+    public function setLastnamePlaceholder($lastnamePlaceholder)
+    {
+        $this->lastnamePlaceholder = $lastnamePlaceholder;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFirstnamePlaceholder()
+    {
+        return $this->firstnamePlaceholder;
+    }
+
+    /**
+     * @param string $firstnamePlaceholder
+     */
+    public function setFirstnamePlaceholder($firstnamePlaceholder)
+    {
+        $this->firstnamePlaceholder = $firstnamePlaceholder;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmailPlaceholder()
+    {
+        return $this->emailPlaceholder;
+    }
+
+    /**
+     * @param string $emailPlaceholder
+     */
+    public function setEmailPlaceholder($emailPlaceholder)
+    {
+        $this->emailPlaceholder = $emailPlaceholder;
     }
 }

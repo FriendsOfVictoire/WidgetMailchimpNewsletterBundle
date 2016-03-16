@@ -1,6 +1,9 @@
 services:
     victoire_core.widget_mailchimpnewsletter_content_resolver:
+        class: Victoire\Widget\MailchimpNewsletterBundle\Resolver\WidgetMailchimpNewsletterContentResolver
         parent: victoire_widget.base_widget_content_resolver
+        arguments:
+            - "%mailchimp_form_base_url%"
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: MailchimpNewsletter }
 

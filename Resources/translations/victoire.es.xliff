@@ -46,6 +46,22 @@
         <source>victoire.VictoireWidgetMailchimpNewsletterBundle.theme.Horizontal.label</source>
         <target>Horizontal</target>
       </trans-unit>
+      <trans-unit>
+          <source>victoire_mailchimp_newsletter.show.signupForm.email.placeholder</source>
+          <target>Email</target>
+      </trans-unit>
+      <trans-unit>
+          <source>victoire_mailchimp_newsletter.show.signupForm.firstname.placeholder</source>
+          <target>First name</target>
+      </trans-unit>
+      <trans-unit>
+          <source>victoire_mailchimp_newsletter.show.signupForm.lastname.placeholder</source>
+          <target>Last name</target>
+      </trans-unit>
+      <trans-unit>
+          <source>victoire_mailchimp_newsletter.show.signupForm.button.placeholder</source>
+          <target>OK</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -46,6 +46,46 @@
         <source>victoire.VictoireWidgetMailchimpNewsletterBundle.theme.Horizontal.label</source>
         <target>Horizontal</target>
       </trans-unit>
+      <trans-unit id="14" resname="widget_mailchimpnewsletter.form.lastnameLabel.label">
+        <source>widget_mailchimpnewsletter.form.lastnameLabel.label</source>
+        <target>Libellé accompagnant le champ Prénom</target>
+      </trans-unit>
+      <trans-unit id="15" resname="widget_mailchimpnewsletter.form.lastnamePlaceholder.label">
+        <source>widget_mailchimpnewsletter.form.lastnamePlaceholder.label</source>
+        <target>Valeur indicative pour le champ Prénom ("Placeholder")</target>
+      </trans-unit>
+      <trans-unit id="16" resname="widget_mailchimpnewsletter.form.firstnameLabel.label">
+        <source>widget_mailchimpnewsletter.form.firstnameLabel.label</source>
+        <target>Libellé accompagnant le champ Prénom</target>
+      </trans-unit>
+      <trans-unit id="17" resname="widget_mailchimpnewsletter.form.firstnamePlaceholder.label">
+        <source>widget_mailchimpnewsletter.form.firstnamePlaceholder.label</source>
+        <target>Valeur indicative pour le champ Prénom ("Placeholder")</target>
+      </trans-unit>
+      <trans-unit id="18" resname="widget_mailchimpnewsletter.form.emailLabel.label">
+        <source>widget_mailchimpnewsletter.form.emailLabel.label</source>
+        <target>Libellé accompagnant le champ email</target>
+      </trans-unit>
+      <trans-unit id="19" resname="widget_mailchimpnewsletter.form.emailPlaceholder.label">
+        <source>widget_mailchimpnewsletter.form.emailPlaceholder.label</source>
+        <target>Valeur indicative pour le champ Email ("Placeholder")</target>
+      </trans-unit>
+      <trans-unit>
+          <source>victoire_mailchimp_newsletter.show.signupForm.email.placeholder</source>
+          <target>Adresse email</target>
+      </trans-unit>
+      <trans-unit>
+          <source>victoire_mailchimp_newsletter.show.signupForm.firstname.placeholder</source>
+          <target>Prénom</target>
+      </trans-unit>
+      <trans-unit>
+          <source>victoire_mailchimp_newsletter.show.signupForm.lastname.placeholder</source>
+          <target>Nom</target>
+      </trans-unit>
+      <trans-unit>
+          <source>victoire_mailchimp_newsletter.show.signupForm.button.placeholder</source>
+          <target>OK</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

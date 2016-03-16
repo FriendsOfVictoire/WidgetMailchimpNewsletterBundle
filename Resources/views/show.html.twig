@@ -7,8 +7,8 @@
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup" style="overflow: hidden">
         {% block form %}
-            <form action="//appventus.us5.list-manage.com/subscribe/post?u=UID&amp;id={{ listId }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate {% block form_class %}form-horizontal{% endblock form_class %}" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
+            <form action="{{ mailchimpFormUrl }}" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate {% block form_class %}form-horizontal{% endblock form_class %}" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll form-group">
 
                     <div id="mce-responses" class="clear">
                         <div class="response" id="mce-error-response" style="display:none"></div>
@@ -16,33 +16,36 @@
                     </div>
                     {% if enableFirstName %}
                         <div class="mc-field-group form-group">
-                            <label for="mce-FNAME" class="{{ block('extra_label_class') }}">{{ 'victoire_mailchimp_newsletter.show.signupForm.firstName.label'|trans }} </label>
+                            <label for="mce-FNAME" class="{{ block('extra_label_class') }}">{{ firstNameLabel|default('victoire_mailchimp_newsletter.show.signupForm.firstName.label'|trans) }}
                             {% block firstname_field %}
-                                <input type="text" value="" name="FNAME" class="{{ block('text_inputs_class') }}" id="mce-FNAME">
+                                <input type="text" value="" name="FNAME" class="{{ block('text_inputs_class') }}" id="mce-FNAME" placeholder="{{ firstNamePlaceholder|default('victoire_mailchimp_newsletter.show.signupForm.firstName.label'|trans) }}" {% block input_firstname_extra_attributes %}{% endblock input_firstname_extra_attributes %}>
                             {% endblock firstname_field %}
+                            </label>
                         </div>
                     {% endif %}
                     {% if enableLastName %}
                         <div class="mc-field-group form-group">
-                            <label for="mce-LNAME" class="{{ block('extra_label_class') }}">{{ 'victoire_mailchimp_newsletter.show.signupForm.lastName.label'|trans }} </label>
+                            <label for="mce-LNAME" class="{{ block('extra_label_class') }}">{{ lastNameLabel|default('victoire_mailchimp_newsletter.show.signupForm.lastName.label'|trans) }}
                             {% block lastname_field %}
-                                <input type="text" value="" name="LNAME" class="{{ block('text_inputs_class') }}" id="mce-LNAME">
+                                <input type="text" value="" name="LNAME" class="{{ block('text_inputs_class') }}" id="mce-LNAME" placeholder="{{ lastNamePlaceholder|default('victoire_mailchimp_newsletter.show.signupForm.lastName.label'|trans) }}" {% block input_lastname_extra_attributes %}{% endblock input_lastname_extra_attributes %}>
                             {% endblock lastname_field %}
+                            </label>
                         </div>
                     {% endif %}
                     {% block email_group_field %}
                     <div class="mc-field-group form-group">
-                        <label for="mce-EMAIL" class="{{ block('labels_class') }}">{{ 'victoire_mailchimp_newsletter.show.signupForm.email.label'|trans }}</label>
+                        <label for="mce-EMAIL" class="{{ block('labels_class') }}">{{ emailLabel|default('victoire_mailchimp_newsletter.show.signupForm.email.label'|trans) }}
                         {% block email_field %}
-                            <input type="email" value="" name="EMAIL" class="required email {{ block('text_inputs_class') }}" id="mce-EMAIL">
+                            <input type="email" value="" name="EMAIL" class="required email {{ block('text_inputs_class') }}" id="mce-EMAIL" placeholder="{% block email_field_placeholder %}{{ emailPlaceholder|default('victoire_mailchimp_newsletter.show.signupForm.email.label'|trans) }}{% endblock %}" {% block input_email_extra_attributes %}{% endblock input_email_extra_attributes %}>
                         {% endblock email_field %}
+                        </label>
                     </div>
                     {% endblock email_group_field %}
 
                     {% block button %}
-                    <button type="submit" class="btn btn-primary" id="mc-embedded-subscribe">
+                    <button type="submit" class="{% block button_class_attr %}btn btn-primary{% endblock button_class_attr %}" id="mc-embedded-subscribe" {% block button_extra_attributes %}{% endblock button_extra_attributes %}>
                         {% if icon != "" %}<i class="fa {{ icon }}"></i> {% endif %}
-                        {{ buttonLabel }}
+                        {{ buttonLabel|default('victoire_mailchimp_newsletter.show.signupForm.button.placeholder'|trans) }}
                     </button>
                     {% endblock button %}
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->

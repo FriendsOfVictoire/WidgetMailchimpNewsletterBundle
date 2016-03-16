@@ -14,6 +14,10 @@
         <source>victoire_mailchimp_newsletter.show.signupForm.lastName.label</source>
         <target>Last name</target>
       </trans-unit>
+      <trans-unit>
+          <source>victoire_mailchimp_newsletter.show.signupForm.button.placeholder</source>
+          <target>OK</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

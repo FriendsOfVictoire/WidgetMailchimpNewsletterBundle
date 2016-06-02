@@ -5,3 +5,26 @@
 {% block input_email_extra_attributes %}style="display: inline"{% endblock input_email_extra_attributes %}
 {% block input_firstname_extra_attributes %}style="display: inline"{% endblock input_firstname_extra_attributes %}
 {% block input_lastname_extra_attributes %}style="display: inline"{% endblock input_lastname_extra_attributes %}
+{% block button %}{% endblock button %}
+
+{% block email_group_field %}
+    <div class="mc-field-group form-group">
+        <div class="input-group">
+            {% block email_field %}
+                <input type="email"
+                       placeholder="{{ 'victoire_mailchimp_newsletter.show.signupForm.email.label'|trans }}"
+                       name="EMAIL"
+                       class="required email {{ block('text_inputs_class') }}"
+                       id="mce-EMAIL">
+            {% endblock email_field %}
+
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-primary" id="mc-embedded-subscribe">
+                    {% if icon != "" %}<i class="fa {{ icon }}"></i> {% endif %}
+                    {{ buttonLabel }}
+                </button>
+            </span>
+        </div>
+    </div>
+{% endblock email_group_field %}
+

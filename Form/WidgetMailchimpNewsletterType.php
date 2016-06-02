@@ -2,6 +2,7 @@
 
 namespace Victoire\Widget\MailchimpNewsletterBundle\Form;
 
+use Buzz\Exception\RequestException;
 use Hype\MailchimpBundle\Mailchimp\MailChimp;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -34,10 +35,15 @@ class WidgetMailchimpNewsletterType extends WidgetType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $lists = [];
-        $_lists = $this->mailchimp->getList()->lists();
-        foreach ($_lists['data'] as $list) {
-            $lists[$list['name']] = $list['id'];
+        $lists = $_lists = [];
+        try {
+            $_lists = $this->mailchimp->getList()->lists();
+            foreach ($_lists['data'] as $list) {
+                $lists[$list['name']] = $list['id'];
+            }
+            $helpMessage = '';
+        } catch (RequestException $e) {
+            $helpMessage = 'widget_mailchimpnewsletter.form.listId.help_message';
         }
 
         $builder
@@ -45,6 +51,7 @@ class WidgetMailchimpNewsletterType extends WidgetType
                 'label'             => 'widget_mailchimpnewsletter.form.listId.label',
                 'choices'           => $lists,
                 'choices_as_values' => true,
+                'vic_help_block'   => $helpMessage,
             ])
             ->add('buttonLabel', null, [
                 'label' => 'widget_mailchimpnewsletter.form.buttonLabel.label',

@@ -16,7 +16,7 @@ class WidgetMailchimpNewsletter extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="listId", type="string", length=55)
+     * @ORM\Column(name="listId", type="string", length=55, nullable=true)
      */
     protected $listId;
 

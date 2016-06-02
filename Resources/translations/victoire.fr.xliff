@@ -86,6 +86,10 @@
           <source>victoire_mailchimp_newsletter.show.signupForm.button.placeholder</source>
           <target>OK</target>
       </trans-unit>
+      <trans-unit>
+          <source>widget_mailchimpnewsletter.form.listId.label</source>
+          <target>Il semble que lurl mailchimp fournie soit invalide, impossible de récupérer les listes</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

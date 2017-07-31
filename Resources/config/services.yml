@@ -1,20 +1,20 @@
 services:
     victoire_core.widget_mailchimpnewsletter_content_resolver:
-        class: Victoire\Widget\MailchimpNewsletterBundle\Resolver\WidgetMailchimpNewsletterContentResolver
+        class: 'Victoire\Widget\MailchimpNewsletterBundle\Resolver\WidgetMailchimpNewsletterContentResolver'
         parent: victoire_widget.base_widget_content_resolver
         arguments:
-            - "%mailchimp_form_base_url%"
+            - '%mailchimp_form_base_url%'
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: MailchimpNewsletter }
 
     #alias to the entity
     victoire.widget.mailchimpnewsletter:
-        class: Victoire\Widget\MailchimpNewsletterBundle\Entity\WidgetMailchimpNewsletter
+        class: 'Victoire\Widget\MailchimpNewsletterBundle\Entity\WidgetMailchimpNewsletter'
 
     #alias to the form
     victoire.widget.form.mailchimpnewsletter:
-        class: Victoire\Widget\MailchimpNewsletterBundle\Form\WidgetMailchimpNewsletterType
+        class: 'Victoire\Widget\MailchimpNewsletterBundle\Form\WidgetMailchimpNewsletterType'
         arguments:
-          - @hype_mailchimp
+          - '@hype_mailchimp'
         tags:
             - { name: form.type }

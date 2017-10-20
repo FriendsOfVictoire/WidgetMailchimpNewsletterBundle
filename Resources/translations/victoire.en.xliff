@@ -8,11 +8,11 @@
     <body>
       <trans-unit id="1" resname="widget.mailchimpnewsletter.new.action.label">
         <source>widget.mailchimpnewsletter.new.action.label</source>
-        <target>Mailchimp Newsletter form</target>
+        <target>Mailchimp Newsletter</target>
       </trans-unit>
       <trans-unit id="2" resname="modal.form.widget.type.mailchimpnewsletter.label">
         <source>modal.form.widget.type.mailchimpnewsletter.label</source>
-        <target>Mailchimp Newsletter form</target>
+        <target>Mailchimp Newsletter</target>
       </trans-unit>
       <trans-unit id="3" resname="widget_mailchimpnewsletter.form.listId.label">
         <source>widget_mailchimpnewsletter.form.listId.label</source>
@@ -46,19 +46,19 @@
         <source>victoire.VictoireWidgetMailchimpNewsletterBundle.theme.Horizontal.label</source>
         <target>Horizontal</target>
       </trans-unit>
-      <trans-unit>
+      <trans-unit id="14" resname="victoire_mailchimp_newsletter.show.signupForm.email.placeholder">
           <source>victoire_mailchimp_newsletter.show.signupForm.email.placeholder</source>
           <target>Email</target>
       </trans-unit>
-      <trans-unit>
+      <trans-unit id="15" resname="victoire_mailchimp_newsletter.show.signupForm.firstname.placeholder">
           <source>victoire_mailchimp_newsletter.show.signupForm.firstname.placeholder</source>
           <target>First name</target>
       </trans-unit>
-      <trans-unit>
+      <trans-unit id="16" resname="victoire_mailchimp_newsletter.show.signupForm.lastname.placeholder">
           <source>victoire_mailchimp_newsletter.show.signupForm.lastname.placeholder</source>
           <target>Last name</target>
       </trans-unit>
-      <trans-unit>
+      <trans-unit id="17" resname="victoire_mailchimp_newsletter.show.signupForm.button.placeholder">
           <source>victoire_mailchimp_newsletter.show.signupForm.button.placeholder</source>
           <target>OK</target>
       </trans-unit>

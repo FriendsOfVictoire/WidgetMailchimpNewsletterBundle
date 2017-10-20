@@ -70,23 +70,23 @@
         <source>widget_mailchimpnewsletter.form.emailPlaceholder.label</source>
         <target>Valeur indicative pour le champ Email ("Placeholder")</target>
       </trans-unit>
-      <trans-unit>
+      <trans-unit id="20" resname="victoire_mailchimp_newsletter.show.signupForm.email.placeholder">
           <source>victoire_mailchimp_newsletter.show.signupForm.email.placeholder</source>
           <target>Adresse email</target>
       </trans-unit>
-      <trans-unit>
+      <trans-unit id="21" resname="victoire_mailchimp_newsletter.show.signupForm.firstname.placeholder">
           <source>victoire_mailchimp_newsletter.show.signupForm.firstname.placeholder</source>
           <target>Prénom</target>
       </trans-unit>
-      <trans-unit>
+      <trans-unit id="22" resname="victoire_mailchimp_newsletter.show.signupForm.lastname.placeholder">
           <source>victoire_mailchimp_newsletter.show.signupForm.lastname.placeholder</source>
           <target>Nom</target>
       </trans-unit>
-      <trans-unit>
+      <trans-unit id="23" resname="victoire_mailchimp_newsletter.show.signupForm.button.placeholder">
           <source>victoire_mailchimp_newsletter.show.signupForm.button.placeholder</source>
           <target>OK</target>
       </trans-unit>
-      <trans-unit>
+      <trans-unit id="24" resname="widget_mailchimpnewsletter.form.listId.label">
           <source>widget_mailchimpnewsletter.form.listId.label</source>
           <target>Il semble que lurl mailchimp fournie soit invalide, impossible de récupérer les listes</target>
       </trans-unit>
